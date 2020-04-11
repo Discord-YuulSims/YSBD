@@ -68,11 +68,11 @@ module.exports.run = async (bot, message, args) => {
 
         message.channel.send("Al de commando's staan in je privé berichten! :mailbox_with_mail:");
 
-    })//.catch(() => {
+    }).catch(() => {
 
-      //  message.channel.send("Je privé berichten staan uit geschakeld, je hebt geen hulp ontvangen.");
+        message.channel.send("Je privé berichten staan uit geschakeld, je hebt geen hulp ontvangen.");
 
-  //  });
+   });
 
 }
 
