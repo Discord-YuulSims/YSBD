@@ -36,8 +36,7 @@ module.exports.run = async (bot, message, args) => {
     var repsonse = "";
  
  */
-
-    var commandsList = [];
+var commandsList = [];
 
     bot.commands.forEach(command => {
 
@@ -70,10 +69,9 @@ module.exports.run = async (bot, message, args) => {
 
     }).catch(() => {
 
-        message.channel.send("Je privé berichten staan uit geschakeld, je hebt geen hulp ontvangen.");
+        message.channel.send("Je privé berichten staan uit geschakeld, je hebt geen hulp ontvangen");
 
-   });
-
+    });
 }
 
 module.exports.help = {
