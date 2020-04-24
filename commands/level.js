@@ -14,6 +14,7 @@ module.exports.run = async (bot, message, args) => {
             level: 0
 
         };
+        var User = message.guild.member(message.mentions.users.first()|| message.guild.members.get(args[0]));
 
     }
 
@@ -27,7 +28,7 @@ module.exports.run = async (bot, message, args) => {
        var whenNextLevel = nextLevelXp - xpUser;
 
        var embedLevel = new discord.RichEmbed()
-       .setTitle(message.author.username)
+       .setTitle(User)
        .setDescription("Proficiat met je level.")
        .setColor("#29e53f")
        //.setThumbnail("https://vignette.wikia.nocookie.net/disneyemojiblitz/images/9/94/Rainbow_Star.png/revision/latest?cb=20170112170239")
