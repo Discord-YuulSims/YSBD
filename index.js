@@ -57,7 +57,6 @@ bot.on("guildMemberAdd", member => {
         .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL)
         .setThumbnail(userIcon)
         .setDescription(`**Hey ${member.user.username},** \n**Welkom** in de server van **YuulSims**.`)
-        .addField("We zijn met", message.guild.memberCount)
         .setColor("#00ff73")
         .setTimestamp()
         .setFooter("©YuulSims Server | Gebruiker gejoind.");
@@ -88,7 +87,6 @@ bot.on("guildMemberRemove", member => {
         .setThumbnail(userIcon)
         .setDescription(`**${member.user.username} heeft de server verlaten.** \n Met pijn in het hart moeten wij afscheidt nemen van ${member.user.username}`)
         .setColor("#ff5500")
-        .addField("We zijn nog met", member.guild.memberCount)
         .setTimestamp()
         .setFooter("©YuulSims Server | Gebruiker geleavd");
 
