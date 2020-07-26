@@ -37,6 +37,19 @@ bot.on("ready", async () => {
     bot.user.setActivity("| !?help", { type: "PlAYING" });
 });
 
+    if (command === `${prefix}match`) {
+ 
+        var ma = new discord.RichEmbed()
+        .setTitel ("Match day")
+        .setThumbnail ("https://i.pinimg.com/originals/64/2b/36/642b369640d84c8310da567be897120f.png")
+        .addField ("**__Wat is Match Day?__**", "Match Day is een opdracht die je krijgt en die moet je dan voltooien in een week. \n Het moet wel een opdracht zijn van de sims omdat de server draait rond sims. Dat kan van alles zijn zoals: een joker, cas,bouw,... \n Kijk hieronder voor meer info!👇)
+                   .addField ("**__Planning!__**" , "**Maandag:** Om 17:00 krijgen jullie de opdracht. \n **Dinsdag/Woensdag:** Kunnen jullie het maken en insturen. \n **Donderdag:** Sluit het om 17:00 en kunnen jullie niet meer insturen. Maar kunnen jullie wel stemmen! \n **Vrijdag:** Maken we de winnaar bekent! En wordt de stemming gesloten. \n **Zaterdag/Zondag:** Is het rustdag.")
+                   .addField ("**__Hoe werkt het?__**", "Je krijgt in dit kanaal de opdracht soms zit er een filmpje bij met de opdracht. Daar zit ook de regels bij hieronder staan ook de vaste regels. Als je klaar bent moet je er een foto/screenshot van maken en doorsturen. Dan komt jij naam in het bericht voor het stemmen en dan maar hopen dat ze op jou stemmen!")
+                   .addField ("**__Regels.__**", "Niet naapen! \n Geen commentaar geven(tips mogen wel!) \n 1 keer inzenden anders wordt je gedistingeerd! \n En maak plezier!")
+                   .addField ("**MVG**", `**Het YuulSims Team`);
+   
+    }
+
 bot.on("guildMemberAdd", member => {
 
     var role = member.guild.roles.find("name", "👀 | kijkers");
